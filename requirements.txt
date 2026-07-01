@@ -1,0 +1,13 @@
+telethon
+python-dotenv
+psycopg2-binary
+sqlalchemy
+dbt-core
+dbt-postgres
+ultralytics
+fastapi
+uvicorn
+pydantic
+dagster
+dagster-webserver
+pandas
