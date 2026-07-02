@@ -1,0 +1,13 @@
+medical_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres
+      port: 5433
+      dbname: medical_warehouse
+      schema: public
+      threads: 1
+      keepalives_idle: 0

@@ -58,6 +58,17 @@ CREATE TABLE IF NOT EXISTS raw.telegram_messages (
     loaded_at       TIMESTAMP DEFAULT now(),
     PRIMARY KEY (message_id, channel_name)
 );
+
+CREATE TABLE IF NOT EXISTS raw.image_detections (
+    message_id BIGINT,
+    channel_name TEXT,
+    image_path TEXT,
+    detected_objects TEXT,
+    confidence_score DOUBLE PRECISION,
+    image_category TEXT,
+    loaded_at TIMESTAMP DEFAULT now(),
+    PRIMARY KEY (message_id, channel_name)
+);
 """
 
 UPSERT_SQL = """
